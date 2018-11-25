@@ -39,3 +39,64 @@ npm install
 ```
 npm start
 ```
+# Anotações gerais
+
+Antes de tudo, crie um novo repositório no seu GitHub, por exemplo, criei o:
+https://github.com/CharlesMendes/learn-react-by-building-a-web-app.git
+
+
+Clonar um novo conteúdo
+```
+➜  Projects git clone https://github.com/udilia/learn-react-by-building-a-web-app.git
+```
+
+Entrar no diretório clonado, e remover o .git existente
+```
+➜  Projects cd learn-react-by-building-a-web-app 
+➜  learn-react-by-building-a-web-app git:(master) rm -r .git
+```
+
+Inicializar um novo repositório git (seu repositório particular/publico)
+```
+➜  learn-react-by-building-a-web-app git init
+➜  learn-react-by-building-a-web-app git:(master) ✗ git remote add origin 
+```
+
+https://github.com/CharlesMendes/learn-react-by-building-a-web-app.git
+
+
+Crie ou edite o .gitignore, com o conteúdo abaixo (na raiz do projeto)
+https://github.com/facebook/react/blob/master/.gitignore
+
+Adicione os arquivos ao seu git, pelo comando abaixo, e realize o commit
+```
+➜  learn-react-by-building-a-web-app git:(master) ✗ git add *
+➜  learn-react-by-building-a-web-app git:(master) ✗ git commit -m 'arquivos iniciais para o projeto’
+```
+
+Realize o push
+```
+➜  learn-react-by-building-a-web-app git:(master) ✗ git push -u origin master
+```
+
+Instale o projeto
+```
+➜  learn-react-by-building-a-web-app git:(master) ✗ cd react-coin 
+➜  react-coin git:(master) ✗ yarn install 
+```
+
+Atualize as dependencias
+```
+➜  react-coin git:(master) ✗ yarn upgrade  
+```
+
+Rode o projeto para testar
+```
+➜  react-coin git:(master) ✗ yarn run start
+```
+
+http://localhost:3000/
+
+https://api.udilia.com/docs/cryptocurrencies/v1
+https://udilia.com/docs/cryptocurrencies/v1
+
